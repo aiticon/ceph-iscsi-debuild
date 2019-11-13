@@ -1,0 +1,19 @@
+Source: configshell-fb
+Section: python
+Priority: optional
+Maintainer: Dirk Heuvels <dirk.heuvels@aiticon.com>
+Standards-Version: 4.1.3
+Homepage: https://github.com/open-iscsi/configshell-fb
+Build-Depends: debhelper (>= 11),
+               dh-python,
+               python-all,
+               python-setuptools
+
+Package: python-configshell-fb
+Architecture: all
+Depends: pypy-pyparsing,
+         python-six,
+         python-urwid,
+         ${python:Depends}
+Description: Shell backend for ceph iSCSI gwcli.
+  A Python library for building configuration shells.

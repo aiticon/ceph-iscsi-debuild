@@ -1,0 +1,24 @@
+Source: tcmu-runner
+Section: admin
+Priority: optional
+Maintainer: Dirk Heuvels <dirk.heuvels@aiticon.com>
+Standards-Version: 4.1.3
+Homepage: https://github.com/open-iscsi/tcmu-runner
+Build-Depends: debhelper (>= 11),
+               cmake,
+               librbd-dev (>= 14.2),
+               librados-dev (>= 14.2),
+               libnl-3-dev,
+               libnl-genl-3-dev,
+               zlib1g-dev,
+               libglib2.0-dev,
+               libkmod-dev,
+               libgoogle-perftools-dev
+
+Package: tcmu-runner
+Architecture: amd64
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Ceph iSCSI tcmu-runner daemon.
+  A daemon that handles the userspace side of the LIO TCM-User backstore.
+

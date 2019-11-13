@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	dh_clean CMakeCache.txt
+
+override_dh_auto_configure:
+	cmake -S . -B . -Dwith-glfs=false -Dwith-qcow=false -DSUPPORT_SYSTEMD=ON -DCMAKE_INSTALL_PREFIX=/usr
+
+override_dh_installsystemd:
+	mv debian/tcmu-runner/usr/lib/systemd/system/tcmu-runner.service debian/tcmu-runner.service
+	rm -rf debian/tcmu-runner/usr/lib/systemd/system
+	dh_installsystemd --no-start --no-stop-on-upgrade --no-restart-after-upgrade

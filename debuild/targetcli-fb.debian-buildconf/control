@@ -1,0 +1,19 @@
+Source: targetcli-fb
+Section: python
+Priority: optional
+Maintainer: Dirk Heuvels <dirk.heuvels@aiticon.com>
+Standards-Version: 4.1.3
+Homepage: https://github.com/open-iscsi/targetcli-fb
+Build-Depends: debhelper (>= 11),
+               dh-python,
+               python-all,
+               python-setuptools
+
+Package: python-targetcli-fb
+Architecture: all
+Depends: python-rtslib-fb (>= 2.1.70),
+         python-configshell-fb (>= 1.1.26),
+         ${python:Depends}
+Description: LIO target management for ceph iSCSI gwcli.
+  A command shell for managing the Linux LIO kernel target.
+

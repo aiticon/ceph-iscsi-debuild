@@ -1,0 +1,9 @@
+debuild/*
+!debuild/tcmu-runner
+!debuild/rtslib-fb
+!debuild/configshell-fb
+!debuild/targetcli-fb
+!debuild/ceph-iscsi
+!debuild/buildall.sh
+!debuild/*.debian-buildconf
+.idea

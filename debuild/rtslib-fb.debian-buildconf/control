@@ -1,0 +1,18 @@
+Source: rtslib-fb
+Section: python
+Priority: optional
+Maintainer: Dirk Heuvels <dirk.heuvels@aiticon.com>
+Standards-Version: 4.1.3
+Homepage: https://github.com/open-iscsi/rtslib-fb
+Build-Depends: debhelper (>= 11),
+               dh-python,
+               python-all,
+               python-setuptools
+
+Package: python-rtslib-fb
+Architecture: all
+Depends: tcmu-runner (>= 1.5.2),
+         ${python:Depends}
+Description: Ceph iSCSI rtslib-fb api.
+  A Python object API for managing the Linux LIO kernel target.
+

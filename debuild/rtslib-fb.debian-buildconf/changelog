@@ -1,0 +1,12 @@
+rtslib-fb (2.1.70-1) unstable; urgency=medium
+
+  * Added manpages and docs.
+
+ -- Dirk Heuvels <dirk.heuvels@aiticon.com>  Wed, 6 Nov 2019 22:58:34 +0100
+
+rtslib-fb (2.1.70) unstable; urgency=medium
+
+  * Initial packaging following "Manual ceph-iscsi Installation"
+    https://docs.ceph.com/docs/master/rbd/iscsi-target-cli-manual-install/
+
+ -- Dirk Heuvels <dirk.heuvels@aiticon.com>  Mon, 22 Oct 2019 10:45:54 +0100

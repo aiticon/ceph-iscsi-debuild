@@ -1,0 +1,15 @@
+[submodule "debuild/ceph-iscsi"]
+	path = debuild/ceph-iscsi
+	url = https://github.com/ceph/ceph-iscsi.git
+[submodule "debuild/targetcli-fb"]
+	path = debuild/targetcli-fb
+	url = https://github.com/open-iscsi/targetcli-fb.git
+[submodule "debuild/configshell-fb"]
+	path = debuild/configshell-fb
+	url = https://github.com/open-iscsi/configshell-fb.git
+[submodule "debuild/rtslib-fb"]
+	path = debuild/rtslib-fb
+	url = https://github.com/open-iscsi/rtslib-fb.git
+[submodule "debuild/tcmu-runner"]
+	path = debuild/tcmu-runner
+	url = https://github.com/open-iscsi/tcmu-runner

@@ -4,10 +4,10 @@ Priority: optional
 Maintainer: Dirk Heuvels <dirk.heuvels@aiticon.com>
 Standards-Version: 4.1.3
 Homepage: https://github.com/open-iscsi/tcmu-runner
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper (>= 10),
                cmake,
-               librbd-dev (>= 14.2),
-               librados-dev (>= 14.2),
+               librbd-dev (>= 13.2),
+               librados-dev (>= 13.2),
                libnl-3-dev,
                libnl-genl-3-dev,
                zlib1g-dev,

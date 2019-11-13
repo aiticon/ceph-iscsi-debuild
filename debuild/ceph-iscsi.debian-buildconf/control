@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Dirk Heuvels <dirk.heuvels@aiticon.com>
 Standards-Version: 4.1.3
 Homepage: https://github.com/ceph/ceph-iscsi
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper (>= 10),
                dh-python,
                python-all,
                python-setuptools
@@ -16,8 +16,8 @@ Depends: python2-devel,
          rpm-python (>= 4.11),
          python-cryptography,
          python-flask (>= 0.10.1),
-         python-rados (>= 14.2),
-         python-rbd (>= 14.2),
+         python-rados (>= 13.2),
+         python-rbd (>= 13.2),
          python-rtslib-fb (>= 2.1.70),
          python-configshell-fb (>= 1.1.26)
 Description: Python modules for Ceph iSCSI gateway configuration management

@@ -11,9 +11,8 @@ Build-Depends: debhelper (>= 11),
 
 Package: ceph-iscsi
 Architecture: all
-Depends: python2-devel,
-         python-netifaces (>= 0.10.4),
-         rpm-python (>= 4.11),
+Depends: python-netifaces (>= 0.10.4),
+         python-rpm (>= 4.11),
          python-cryptography,
          python-flask (>= 0.10.1),
          python-rados (>= 14.2),

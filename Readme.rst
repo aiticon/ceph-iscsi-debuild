@@ -47,6 +47,9 @@ Buster   Nautilus (14.2) https://mirror.croit.io/debian-nautilus
 Stretch  Mimic (13.2)    https://mirror.croit.io/debian-mimic
 ======= ================ =======================================
 
+Note that the Croit packages for Ceph Mimic on Stretch depend on a `newer version of libc6 than the one shipped by Debian <https://croit.io/2018/09/23/2018-09-23-debian-mirror>`_.
+Installation of `tcmu-runner` will therefore change the system's libc6 (if you do not have the Croit packages installed already).
+
 Alternative builds could be
 
 ======= =============== =======================================================
@@ -58,7 +61,7 @@ Stretch Luminous (12.2) Stretch Backports
 Stretch Jewel (10.2)    Stretch Main
 ======= =============== =======================================================
 
-To build any of these the Dockerfile must be changed to include the correct `/etc/apt/sources.list.d` entries.
+To build any of these combinations the Dockerfile must be changed to include the correct `/etc/apt/sources.list.d` entries.
 In addition the corresponding version has to be set in the dependency statements of the Debian control files:
 
 - At "`Depends:`" in `debuild/ceph-iscsi.debian-buildconf/control`::

@@ -13,6 +13,7 @@ override_dh_auto_install:
 	cp usr/lib/systemd/system/rbd-target-gw.service debian/ceph-iscsi.rbd-target-gw.service
 	sed -i 's/EnvironmentFile=-.*/EnvironmentFile=-\/etc\/default\/ceph/g' debian/ceph-iscsi.rbd-target-gw.service
 	sed -i 's/EnvironmentFile=-.*/EnvironmentFile=-\/etc\/default\/ceph/g' debian/ceph-iscsi.rbd-target-api.service
+	sed -i 's/TimeoutStopSec=.*/TimeoutStopSec=30/' debian/ceph-iscsi.rbd-target-api.service
 
 	# required directories known to break daemon startup if missing
 	mkdir -p debian/ceph-iscsi/etc/target

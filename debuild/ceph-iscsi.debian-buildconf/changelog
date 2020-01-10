@@ -1,3 +1,10 @@
+ceph-iscsi (3.2-2) unstable; urgency=medium
+
+  * Changed TimeoutStopSec in rbd-target-api.service after struggling with
+    problems during shutdown.
+
+ -- Dirk Heuvels <dirk.heuvels@aiticon.com>  Wed, 6 Nov 2019 22:06:14 +0100
+
 ceph-iscsi (3.2-1) unstable; urgency=medium
 
   * Polished descriptions and dependencies. Added the unit files the Debian way.
